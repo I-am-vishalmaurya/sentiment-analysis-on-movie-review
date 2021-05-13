@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie review sentiment analysis</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+
+</head>
+<body>
+
+	<!-- ----------------- Title---------------------------- -->
+	<div class="container">
+		 <h2 class="cont-heading">Movie Review Sentiment Analyser</h2>
+		<div class="desc">
+			<p>A web app that predict whether the the review is positive or negative.</p>
+		</div>
+	</div>
+
+	<!-- --------xx------- Title------------xx------------- -->
+	<!-- ----------------Text Area------------------------- -->
+    	<div class="ml-container">
+    		 <form action="{{ url_for('predict')}}"method="post">
+        		<textarea name="message" placeholder="Enter Your Review Here..." required></textarea><br/>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+	<!-- ------------------Result--------------------------- -->
+
+	<div class="results">
+		{{prediction}}
+	</div>
+
+	<!-- -------xx---------Result------------xx------------- -->
+
+	<!-- --------XX------Text Area-----------XX------------ -->
+
+	<!-- ------------------Footer-------------------------- -->
+
+	<div class="footer">
+		<div class="contact">
+			<a target="_blank" href="https://github.com/I-am-vishalmaurya/"/>
+			<a target="_blank" href="https://www.linkedin.com/in/vishal-maurya-49504a1a2/"/>
+		</div>
+		<p class="footer_description">Made by Vishal Maurya</p>
+	</div>
+
+	<!-- ---------xx-------Footer------------xx------------ -->
+
+</body>
+</html>
