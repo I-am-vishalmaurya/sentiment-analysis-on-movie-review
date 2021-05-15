@@ -1,6 +1,7 @@
 import os
+os.environ['TF_CPP_MIN__LOG_LEVEL'] = '3'
+
 import numpy as np
-import keras
 from flask import *
 from keras.models import load_model
 from keras.preprocessing.text import Tokenizer
@@ -20,7 +21,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        messages = ['such a bad movie i wish i never saw it.']
+        messages = request.form['message']
         tokenizer.fit_on_texts(messages)
         token = tokenizer.texts_to_sequences(messages)
         message = pad_sequences(token, maxlen=28, dtype='int32', value=0)
