@@ -1,26 +1,23 @@
-# Iris classification
-![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg)
+# IMDB movie sentiment analysis
+![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.8](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg)
 
-This project can be used to classify the Iris species according to the given Sepal and Petal dimension.
-This model uses KNeighourClassifier to predict the ouput on given input.
+This project uses IMDB 50k dataset of moview review where target is label as positive and
+negative review.
 
- This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
-
-• If you want to view the deployed model, click on the following link:<br />
-Deployed at: _https://iris-classification-knn.herokuapp.com/_
+To run this project clone the repository and run the test_model.py file it will ask for your review
+and it apply some pre-processing to it to classify it in ___positive or negative___ review.
 
 
-Alternatively, you can deploy your own copy of the app using this button:
+This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+* The model is still under deployment feel free to clone and check it out.
+* The model will be deployed at heroku.
 
-Here is the classification of different Iris flower species.
 
-![iris classification image](https://github.com/I-am-vishalmaurya/iris_classification/blob/master/iris_classification.png)
-
-Run this project locally
-  Clone the repository and run it on Conda Environment with command 
+### Run this project locally
+  Clone the repository and run the test_model.py file enter your review there. 
   ```Python
-  python app.py
+    python3 test_model.py
   ```
-   Copy the generated localhost URL and paste in browser.
+
+
