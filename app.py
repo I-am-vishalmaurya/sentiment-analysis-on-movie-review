@@ -10,7 +10,7 @@ from keras.preprocessing.sequence import pad_sequences
 app = Flask(__name__)
 
 model = load_model('model.h5')
-tokenizer = Tokenizer(num_words=2000, split=' ')
+tokenizer = Tokenizer(num_words = 2000, split=" ")
 
 
 @app.route('/')
@@ -28,8 +28,8 @@ def predict():
         sentiment = model.predict(message)[0]
         if np.argmax(sentiment) == 0:
             return render_template('index.html', prediction='Its a negative review')
-        elif np.argmax(sentiment) == 1:
-            return render_template('index.html', prediction='Great!! this is a poitive review')
+        else:
+            return render_template('index.html', prediction='postive')
 
 
 
