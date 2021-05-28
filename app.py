@@ -16,7 +16,7 @@ model_outputs = ""
 # main index page route
 @app.route('/')
 def home():
-    return render_template('index.html', display_mode = "none")
+    return render_template('index.html')
 
 # route for prediction of the review
 @app.route('/predict', methods=['POST'])
