@@ -4,20 +4,30 @@
 This project uses IMDB 50k dataset of moview review where target is label as positive and
 negative review.
 
-To run this project clone the repository and run the test_model.py file it will ask for your review
-and it apply some pre-processing to it to classify it in ___positive or negative___ review.
+The algorithm used is SGDClassifier since it has feature for further learning by 
+incremental training check the incremental_training.ipynb for more information.
 
 
 This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
 
-* The model is still under deployment feel free to clone and check it out.
-* The model will be deployed at heroku.
+Check the project here:- https://imdb-review-analysis-movie.herokuapp.com/
 
+* Alternatively, you can deploy your own copy of the app using this button:
 
-### Run this project locally
-  Clone the repository and run the test_model.py file enter your review there. 
+    [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+* Run this project locally
+  Clone the repository and run it on Conda Environment with command 
   ```Python
-    python3 test_model.py
+  python app.py
   ```
+   Copy the generated localhost URL and paste in browser.
+
+
+_**----- Important Note -----**_<br />
+• If you encounter this webapp as shown in the picture given below, it is occuring just because **free dynos for this particular month provided by Heroku have been completely used.** _You can access the webpage on 1st of the next month._<br />
+• Sorry for the inconvenience.
+
+![Heroku-Error](application-error-heroku.png)
 
 
